@@ -1,0 +1,6 @@
+extends layout_login
+block content		       
+        form(method='post', action='/entrar')      
+          input#user(type='text', name='usuario', placeholder='Nombre')
+          input#password(type='password', name='clave', placeholder='Contraseña')
+          input#enviar(type='submit', name='enviar', value='Entar')

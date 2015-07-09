@@ -1,0 +1,34 @@
+extends layout
+extends layout_navegador_admin
+block Lista
+
+   section#contenido
+    article.item
+     h1.
+        Lista de Clientes
+
+     table
+         tr
+           td
+              strong Email
+           td
+              strong Nombre
+           td
+              strong Apellido
+           td
+              strong Celular              
+         each user, i in userlist
+          tr
+            td
+              a()= user.email
+            td
+              a()= user.nombre 
+           
+            td
+              a()= user.apellido
+            td
+              a()= user.celular
+                      
+           
+           
+      

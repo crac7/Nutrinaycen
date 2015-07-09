@@ -1,0 +1,18 @@
+extends layout
+extends layout_navegador_admin
+
+block content  
+ 
+    section#contenido
+      article.item
+         h1= title
+         form#formAddUser(name="adduser",method="post",action="/adduser")
+          input#inputUserEmail(type="text", placeholder="Email", name="useremail")
+          input#inputUserEmail(type="text", placeholder="Nombre", name="usernom")
+          input#inputUserEmail(type="text", placeholder="Apellido", name="userapellido")
+          input#inputUserEmail(type="text", placeholder="Celular", name="usercelular")
+          button#btnSubmit(type="submit") Guardar
+
+
+          
+    
